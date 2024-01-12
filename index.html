@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img style="width: 40px;" src="covid-19.svg" alt="">
+                <span class="logoname">Covi-Track </span>
+            </div>
+
+            <div class="searchbox">
+                <form action="">
+                    <input type="text" placeholder="Search" id="input">
+                    <!-- <i class="fa fa-search"></i> -->
+                    <button class="fa fa-search" style="border: none;" id="btn" type="button"></button>
+                </form>
+            </div>
+
+            <div class="navitem">
+
+
+                <div class="icons">
+                    <ul>
+                        <li><i class="fa fa-envelope"></i></li>
+                        <li><i class="fa fa-bell"></i></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-body">
+            <div class="sidebar">
+                <ul>
+                    <li class="dashboard">
+                        <i class="fa fa-dashcube"></i>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-history"></i>
+                        <a href="#">history</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-newspaper-o"></i>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-info-circle"></i>
+                        <a href="about/about.html">About us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-body">
+                <div class="headtittle">
+                    <span class="greeeting">Please enter country name </span>
+
+                </div>
+
+                <div class="cards">
+                    <div class="row row-1">
+                        <div class="col">
+                            <div class="balance-card">
+                                <h3 class="cardtittle"> Active case</h3>
+                                <h2 class="balance" id="activeCase">00000000</h2>
+                                <span class="balancestatus">+15%</span>
+                                <img width="60px" height="60px" src="active.png" alt="">
+                            
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="balance-card">
+                                <h3 class="cardtittle">Overall Case </h3>
+                                <h2 class="balance" id="OverallCase">00000000</h2>
+                                <span class="balancestatus">+12%</span>
+                                <img width="60px" height="60px" src="total.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="balance-card">
+                                <h3 class="cardtittle">Overall Recovery </h3>
+                                <h2 class="balance" id="Overallrecovery">00000000</h2>
+                                <span class="balancestatus">+6%</span>
+                             
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row row-2">
+                        <div class="col">
+                            <div class="total-invoice">
+                                <h3 class="cardtittle">Today's cases </h3>
+                                <span class="t-i" id="todayCase">00000000</span>
+                                <span class="status">+12%</san>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="paid-invoice">
+                                <h3 class="cardtittle" >Today's deaths</h3>
+                                <span class="p-i" id="todayDeath">00000000</span>
+                                <span class="status">
+                                    0%
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="unpaid-invoice">
+                                <h3 class="cardtittle">Today recovery</h3>
+                                <span class="u-i"  id="todayrecovery">00000000</span>
+                                <span class="status">
+                                    5%
+                                   
+                                </span>
+                            </div>
+                        </div>
+                        <!-- <div class="col">
+                            <div class="invoice-sent">
+                                <h3 class="cardtittle">Invoice sent</h3>
+                                <span class="i-s">120</span>
+                                <span class="status">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                        </div>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
